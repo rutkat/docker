@@ -1,20 +1,23 @@
-<h2 align="left">House Price Prediction Model Docker Deployment</h2>
-	
+# House Price Prediction Model Docker Deployment	
+Download or clone this repo to run it locally with Docker.
 ###
-<div align="left">
-  <p>Tutorial Docker instructions from current directory</p>
-  <p>-Build the Docker image:
-  <code> docker build -t house-price-prediction .</code>
-  </p>
-  <p>-Run the container
-  <code>docker run -d -p 80:80 house-price-prediction</code>
-  </p>
-  <p> Test the endpoint with curl
-  <code> curl -X 'POST' 'http://127.0.0.1:80/predict' -H 'Content-Type: application/json' \ -d '{ "MedInc": 3.5, "AveRooms": 5.0, "AveOccup": 2.}'</code>
-  </p>
-</div>
-<div align="left">
-<code>
+__Tutorial Docker instructions from current directory__
+<br>-Build the Docker image:
+```
+docker build -t house-price-prediction .
+```
+<br>-Run the container
+```
+docker run -d -p 80:80 house-price-prediction
+```
+###  
+__Test the endpoint with curl__
+```
+curl -X 'POST' 'http://127.0.0.1:80/predict' -H 'Content-Type: application/json' \ -d '{ "MedInc": 3.5, "AveRooms": 5.0, "AveOccup": 2.}'
+```
+###
+Dockerfile used for building the image
+```
 # Use the Python base image 
 FROM python:3.9-slim
 
@@ -32,6 +35,5 @@ COPY house_price_prediction.py .
 
 # Set the command to run your Python script
 CMD ["python", "house_price_prediction.py"]
-</code>
-</div>
+```
 
