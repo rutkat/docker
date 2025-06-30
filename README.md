@@ -13,20 +13,16 @@
     <th>Description</th>
   </tr>
   <tr>
-    <td><a href="docker/blob/main/currency_converter/main.py">currency_converter</a></td>
-    <td></td>
+    <td><a href="blob/main/currency_converter/main.py">currency_converter</a></td>
+    <td>Endpoint for mock currency conversion</td>
   </tr>
   <tr>
-    <td><a href="#">house_price_predictions</a></td>
-    <td></td>
+    <td><a href="tree/main/house_price_prediction">house_price_predictions</a></td>
+    <td>Endpoint for housing price prediction using Linear Regression</td>
   </tr>
   <tr>
-    <td><a href="#"></a></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><a href="#"></a></td>
-    <td></td>
+    <td><a href="blob/main/predict_species/predict_species.py">predict_species</a></td>
+    <td>Endpoint for iris flower species prediction based on sepal/petal measurements</td>
   </tr>
   <tr>
     <td><a href="#"></a>In progress...</td>
