@@ -25,7 +25,7 @@
     <td>Endpoint for iris flower species prediction based on sepal/petal measurements</td>
   </tr>
   <tr>
-    <td><a href="tree/main/diabetes_predictor">diabetes_predictor</a></td>
+    <td><a href="blog/main/diabetes_predictor/Dockerfile">diabetes_predictor</a></td>
     <td>Endpoint for diabetes predictor. Uses Random Forest Regresor</td>
   </tr>
 </table>
